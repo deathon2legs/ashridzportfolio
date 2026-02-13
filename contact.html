@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Muhd Ashridz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="logo-container">
+            <img src="images/my-logo.png" alt="Site Logo" class="site-logo">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="page-title">
+                <h1>Muhd Ashridz / <span>contact</span></h1>
+            </div>
+            <div class="subtitle">
+                Aspiring developer & media creator.
+            </div>
+        </header>
+
+        <section class="contact-section">
+            <p>My contact details</p>
+            <p>ashridxmuhd@gmail.com</p>
+            <p>+65 9446 0851</p>
+            <br><br>
+
+            <h3>Contact Me</h3>
+            <br>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label>name (required)</label>
+                    <input type="text" name="fullName" required>
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <div class="form-group" style="flex:1;">
+                        <label>first name</label>
+                        <input type="text" name="firstName">
+                    </div>
+                    <div class="form-group" style="flex:1;">
+                        <label>last name</label>
+                        <input type="text" name="lastName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>email (required)</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>date of birth (required)</label>
+                    <input type="date" name="dob" required style="color:white;">
+                </div>
+
+                <div class="form-group">
+                    <label>message (required)</label>
+                    <textarea name="comments" required></textarea>
+                </div>
+
+                <button type="submit">SEND</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
